@@ -45,6 +45,18 @@
     opacity: 1;
   }
 }
+
+.cd-item img {opacity: 1;}
+@keyframes efeito_di{
+  0%{
+    transform: translateX(3300px);
+  }
+  100%{
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
 .slide1, .slide2, .slide3{
   animation: efeito 0.6s 0.7s forwards;  
   opacity: 0;
@@ -67,4 +79,9 @@
   font-weight: lighter;
   margin-top: 1rem;
   margin-right: 0.5rem;
+}
+
+.cd-item {
+  
+  animation: efeito_di 0.6s 1.5s forwards;  
 }
