@@ -81,7 +81,6 @@
   margin-right: 0.5rem;
 }
 
-.cd-item {
-  
+#cd-item {
   animation: efeito_di 0.6s 1.5s forwards;  
 }
