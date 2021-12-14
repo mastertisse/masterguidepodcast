@@ -1,44 +1,17 @@
+/* 
+*Configuração import das fonts
+*/
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600&display=swap');
-
+/* 
+* Fim Configuração import das fonts
+*/
 
 /* 
-*Configuração do h5 do carrossel
+*Configuração dos efeitos
 */
-.slide1 {
-  font-family: 'Oswald', sans-serif;
-  color: rgb(242, 255, 196);
-  font-size: 3rem;
-  font-weight: bolder;
-  text-align: left;
-}
-
-.slide2 {
-  font-family: 'Oswald', sans-serif;
-  color: rgb(110, 139, 56);
-  font-size: 3rem;
-  font-weight: bolder;
-  text-align: left;
-}
-
-.slide3 {
-  font-family: 'Oswald', sans-serif;
-  color: rgb(233, 196, 255);
-  font-size: 3rem;
-  font-weight: bolder;
-  text-align: left;
-}
-
-#menutopo {
-  font-family: 'Oswald', sans-serif;
-  color: red;
-  font-size: 1.5rem;
-  text-align: right;  
-}
-
-.carousel-item img {opacity: 1;} 
-@keyframes efeito{
+@keyframes efeito_esquerda{
   0%{
-    transform: translateX(-330px);
+    transform: translateX(-1330px);
   }
   100%{
     transform: translateX(0);
@@ -46,10 +19,9 @@
   }
 }
 
-.cd-item img {opacity: 1;}
-@keyframes efeito_di{
+@keyframes efeito_direita{
   0%{
-    transform: translateX(3300px);
+    transform: translateX(330px);
   }
   100%{
     transform: translateX(0);
@@ -57,31 +29,85 @@
   }
 }
 
+@keyframes efeito_scale{
+  0%{
+    transform: scale(0);
+  }
+  100%{
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+/* 
+* Fim Configuração dos efeitos
+*/
+
+/* Exemplo de uso do efeito 
+  
 .slide1, .slide2, .slide3{
-  animation: efeito 0.6s 0.7s forwards;  
+  animation: efeito 0.6s 0.9s forwards;  
   opacity: 0;
 }
-
-.texto1, .texto2, .texto3{
-  animation: efeito 0.6s 1.5s forwards;  
-  opacity: 0;
-  color: red;
-  text-align: left;
-}
+*/
 
 #imglogo {
-  margin-top: 0.5rem;
-  margin-left: 0.5rem;
+  padding: 1rem;
+  height: 15%;
+  width: 15%; 
 }
 
-#botaomenu {
-  font-family: 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-weight: lighter;
-  margin-top: 1rem;
-  margin-right: 0.5rem;
-}
-
-#cd-item {
+.fonttitulo {
   opacity: 0;
-  animation: efeito_di 0.6s 1.5s forwards;  
+  animation: efeito_esquerda 0.6s 0.5s forwards;
+  color: rgb(255, 255, 255);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: left;
+  margin: 0rem 0rem 1rem 0rem;
+}
+
+.fontsubtitulo {
+  opacity: 0;
+  animation: efeito_esquerda 0.6s 1.0s forwards;
+  color: rgb(255, 255, 255);
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: left;
+  margin: 0rem 0rem 1rem 0rem;
+}
+
+.fonttexto {
+  opacity: 0;
+  animation: efeito_esquerda 0.6s 1.5s forwards;
+  color: rgb(255, 255, 255);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: left;
+  margin: 0rem 0rem 20rem 0rem;
+}
+
+#textomenu {
+  color: rgb(87, 53, 53);
+  font-family: fantasy;
+  text-align: left;
+  margin: 0rem 0rem 20rem 0rem;
+}
+
+
+
+
+
+a {
+  padding: 20px 20px;
+  display: inline-block;
+  color: #008000;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 3em;
+  overflow: hidden;
+}
+
+/*creating animation effect*/
+a:hover {
+  color: #111;
+  background: #39ff14;
+  box-shadow: 0 0 50px #39ff14;
 }
