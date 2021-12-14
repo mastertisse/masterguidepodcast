@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;600&display=swap');
+
+
+boby {
+
+}
+/* 
+*Configuração do h5 do carrossel
+*/
+.slide1 {
+  font-family: 'Oswald', sans-serif;
+  color: rgb(242, 255, 196);
+  font-size: 3rem;
+  font-weight: bolder;
+  text-align: left;
+}
+
+.slide2 {
+  font-family: 'Oswald', sans-serif;
+  color: rgb(110, 139, 56);
+  font-size: 3rem;
+  font-weight: bolder;
+  text-align: left;
+}
+
+.slide3 {
+  font-family: 'Oswald', sans-serif;
+  color: rgb(233, 196, 255);
+  font-size: 3rem;
+  font-weight: bolder;
+  text-align: left;
+}
+
+#menutopo {
+  font-family: 'Oswald', sans-serif;
+  color: red;
+  font-size: 1.5rem;
+  text-align: right;  
+}
+
+.carousel-item img {opacity: 1;} 
+@keyframes efeito{
+  0%{
+    transform: translateX(-330px);
+  }
+  100%{
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.slide1, .slide2, .slide3{
+  animation: efeito 0.6s 0.7s forwards;  
+  opacity: 0;
+}
+
+.texto1, .texto2, .texto3{
+  animation: efeito 0.6s 1.5s forwards;  
+  opacity: 0;
+  color: red;
+  text-align: left;
+}
+
+#imglogo {
+  margin-top: 0.5rem;
+  margin-left: 0.5rem;
+}
+
+#botaomenu {
+  margin-top: 0.8rem;
+  margin-right: 0.5rem;
+}
