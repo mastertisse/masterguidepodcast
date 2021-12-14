@@ -82,5 +82,6 @@
 }
 
 #cd-item {
+  opacity: 0;
   animation: efeito_di 0.6s 1.5s forwards;  
 }
